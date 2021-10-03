@@ -1,19 +1,22 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
+import Course from '../Course/Course';
 import { useCourses } from '../hooks/useCourses';
 
 const Courses = () => {
     const [courses] = useCourses();
 
     return (
-        <Row xs={1} md={3} className="g-4">
+        <Container>
+            <Row xs={1} md={3} className="g-4">
             {
-                courses.map(course => <Courses
+                courses.map(course => <Course
                     key={course.id}
-                    course = {course}
-                ></Courses>)
+                    course ={course}
+                ></Course>)
             }
-        </Row>
+            </Row>
+        </Container>
     );
 };
 

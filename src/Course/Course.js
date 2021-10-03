@@ -1,19 +1,22 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
+import Rating from 'react-rating';
 
 const Course = (props) => {
-    const {course} = props.course;
-    console.log(course)
+    const {courseName,catagory,institute,rating,totalStudent,type,imgUrl} = props.course;
+    console.log(props)
     return (
         <Col>
             <Card>
-                <Card.Img variant="top" src="holder.js/100px160" />
+                <Card.Img variant="top" src={imgUrl} />
                 <Card.Body>
-                <Card.Title>Card title</Card.Title>
-                <Card.Text>
-                    This is a longer card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit longer.
-                </Card.Text>
+                <Card.Title>{courseName}</Card.Title>
+                <Rating
+  placeholderRating={rating}
+  emptySymbol={<i class="far fa-star"></i>}
+  placeholderSymbol={<i class="fas fa-star"></i>}
+  fullSymbol={<i class="fas fa-star"></i>}
+/>
                 </Card.Body>
             </Card>
         </Col>
