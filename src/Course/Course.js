@@ -11,12 +11,15 @@ const Course = (props) => {
                 <Card.Img variant="top" src={imgUrl} />
                 <Card.Body>
                 <Card.Title>{courseName}</Card.Title>
-                <Rating
-  placeholderRating={rating}
-  emptySymbol={<i class="far fa-star"></i>}
-  placeholderSymbol={<i class="fas fa-star"></i>}
-  fullSymbol={<i class="fas fa-star"></i>}
-/>
+                    <p>{institute}<small><br /> {catagory}</small> <br /> {totalStudent} Students </p>
+                    <p><strong>{type}</strong>   
+                    <Rating
+                        placeholderRating={rating}
+                        emptySymbol={<i className="far fa-star" bg="warning" ></i>}
+                        placeholderSymbol={<i className="fas fa-star" bg="warning" ></i>}
+                        fullSymbol={<i className="fas fa-star" bg="warning" ></i>}
+                    />
+                    </p>
                 </Card.Body>
             </Card>
         </Col>
