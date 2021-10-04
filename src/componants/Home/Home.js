@@ -8,6 +8,7 @@ const Home = () => {
 
     return (
         <div className="bg-info">
+            {/* carusel  */}
             <Container className="py-2">
                 <Carousel>
                 {
@@ -35,6 +36,8 @@ const Home = () => {
                     </Carousel.Item>)
                 }
             </Carousel>
+
+{/* see all button  */}
             <div className="text-center mb-4">
             <Link to="/courses">
                 <Button>See All Courses</Button>

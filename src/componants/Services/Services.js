@@ -9,7 +9,7 @@ const Services = () => {
         <Container className="mt-4"> 
             <h1>Our Services</h1>
             <Row>
-                <Col xs={12} md={3} className="me-2" >
+                <Col xs={12} md={3} className="me-2 mt-2" >
                     <Card border="info" className="p-2 h-100">
                         <Card.Body>
                             <h4 className="text-primary my-0">Product Certification&nbsp;&gt;</h4>
@@ -21,10 +21,10 @@ const Services = () => {
                     </Link>
                     </Card>
                 </Col>
-                <Col xs={12} md={3} className="me-2">
+                <Col xs={12} md={3} className="me-2 mt-2">
                     <Card border="info" className="p-2 h-100">
                         <Card.Body>
-                            <h4 className="text-primary my-0">Product Certification&nbsp;&gt;</h4>
+                            <h4 className="text-primary my-">Product Certification&nbsp;&gt;</h4>
                             <p className="my-0">eg. CE Marking, Kitemark
                             </p> 
                         </Card.Body>
@@ -33,7 +33,7 @@ const Services = () => {
                     </Link>
                     </Card>
                 </Col>
-                <Col xs={12} md={3} className="me-2">
+                <Col xs={12} md={3} className="me-2 mt-2">
                     <Card border="info" className="p-2 h-100">
                         <Card.Body>
                             <h4 className="text-primary my-0">Certification&nbsp;&gt;</h4>
@@ -50,7 +50,7 @@ const Services = () => {
             </Row>
         </Container>
         <div className="text-center">
-        <Image src="https://image.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg" rounded />
+        <Image className="img-fluid"  src="https://image.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg" rounded />
         </div>
         </>
     )
