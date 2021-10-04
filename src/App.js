@@ -1,11 +1,12 @@
 import { BrowserRouter ,Switch ,Route} from 'react-router-dom';
-import About from './About/About';
 import './App.css';
-import Courses from './Courses/Courses';
-import Footer from './Footer/Footer';
-import Header from './Header/Header';
-import Home from './Home/Home';
-import NotFound from './NotFound/NotFound';
+import About from './componants/About/About';
+import Courses from './componants/Courses/Courses';
+import Footer from './componants/Footer/Footer';
+import Header from './componants/Header/Header';
+import Home from './componants/Home/Home';
+import NotFound from './componants/NotFound/NotFound';
+import Services from './componants/Services/Services';
 
 function App() {
   return (
@@ -22,6 +23,10 @@ function App() {
         
         <Route path="/about"> 
         <About></About>
+        </Route>
+
+        <Route path="/services"> 
+        <Services></Services>
         </Route>
         
         <Route path="/courses"> 
