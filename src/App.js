@@ -2,6 +2,7 @@ import { BrowserRouter ,Switch ,Route} from 'react-router-dom';
 import About from './About/About';
 import './App.css';
 import Courses from './Courses/Courses';
+import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Home from './Home/Home';
 import NotFound from './NotFound/NotFound';
@@ -32,6 +33,8 @@ function App() {
         </Route>
 
       </Switch>
+
+      <Footer></Footer>
     </BrowserRouter>
   );
 }
