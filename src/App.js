@@ -8,11 +8,13 @@ import Footer from './componants/Footer/Footer';
 import Header from './componants/Header/Header';
 import Home from './componants/Home/Home';
 import NotFound from './componants/NotFound/NotFound';
+import ScrollToTop from './componants/ScrollToTop/ScrollToTop';
 import Services from './componants/Services/Services';
 
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
     <Header></Header>
       <Switch>
         <Route exact path="/"> 

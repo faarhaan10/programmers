@@ -10,8 +10,9 @@ const CourseDetail = () => {
     const {courseId} = useParams();
 
 /* 
-//custom not working
+//custom hook not working
 //    const [courses] = useCourses();
+
 // using react hook due to load data again    
     const [courses,setCourses] = useState([]);
     useEffect( () => {
