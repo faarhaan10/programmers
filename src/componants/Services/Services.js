@@ -6,6 +6,7 @@ import Image from 'react-bootstrap/Image'
 const Services = () => {
     return (
 <>
+{/* services  */}
         <Container className="mt-4"> 
             <h1>Our Services</h1>
             <Row>
@@ -49,6 +50,8 @@ const Services = () => {
                 
             </Row>
         </Container>
+
+    {/* service image */}
         <div className="text-center">
         <Image className="img-fluid"  src="https://image.freepik.com/free-vector/web-development-programmer-engineering-coding-website-augmented-reality-interface-screens-developer-project-engineer-programming-software-application-design-cartoon-illustration_107791-3863.jpg" rounded />
         </div>

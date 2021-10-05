@@ -8,7 +8,7 @@ const Contact = () => {
             <Row className="align-items-center pt-2">
                 <Col xs={12} md={6}>
                     <div className="fw-bolder mx-5">
-                        <h1>Get in Touch</h1>
+                        <h1 className="mt-4">Get in Touch</h1>
                         <div>
                             <div className="form-floating mb-3">
                                 <input type="text" className="form-control border border-primary rounded-pill" id="floatingInput" placeholder="name"/>

@@ -14,8 +14,13 @@ import Services from './componants/Services/Services';
 function App() {
   return (
     <BrowserRouter>
-    <ScrollToTop />
-    <Header></Header>
+
+      {/* scroll restoration */}
+      <ScrollToTop />
+
+      {/* navbar */}
+      <Header></Header>
+
       <Switch>
         <Route exact path="/"> 
           <Home></Home>
@@ -45,13 +50,13 @@ function App() {
           <Contact></Contact>
         </Route>
         
-        
         <Route exact path="*"> 
           <NotFound></NotFound>
         </Route>
 
       </Switch>
 
+      {/* footer  */}
       <Footer></Footer>
     </BrowserRouter>
   );
