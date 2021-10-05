@@ -6,7 +6,7 @@ const Footer = () => {
     return (
     <footer className="bg-dark p-2">
 
-        <div className="container pt-2">
+        <div className="container pt-4">
             <div className="row justify-content-start">
                 <div className="col-lg-4 col-sm-12">
                     <div className="">
@@ -34,8 +34,7 @@ const Footer = () => {
                         <h3>About</h3>
                         <Nav.Link as={Link} to="/services"  className="py-0 text-secondary">Services</Nav.Link>
                         <Nav.Link as={Link} to="/about"  className="py-0 text-secondary">About Us</Nav.Link>
-                        <Nav.Link as={Link} to="/about"  className="py-0 text-secondary">Pricing</Nav.Link>
-                        <Nav.Link as={Link} to="/home"  className="py-0 text-secondary">Contact Us</Nav.Link>
+                        <Nav.Link as={Link} to="/contact"  className="py-0 text-secondary">Contact Us</Nav.Link>
                 
                     </div>
                 </div>
@@ -56,8 +55,8 @@ const Footer = () => {
 
             <div className="pt-5">
                     
-                    <p className=" text-white text-center">
-                        © Copyright <span className="text-info">PROGRAMMER
+                    <p className=" text-white text-center m-0">
+                        © Copyright <span className="text-info">PROGRAMMER-2021
                             </span> A Programming Hero Initiative.
                     </p>
             </div>
