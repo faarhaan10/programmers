@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
-import Rating from 'react-rating';
 import { Link } from 'react-router-dom';
 
 const Course = (props) => {

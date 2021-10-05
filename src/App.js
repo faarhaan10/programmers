@@ -1,6 +1,7 @@
 import { BrowserRouter ,Switch ,Route} from 'react-router-dom';
 import './App.css';
 import About from './componants/About/About';
+import Contact from './componants/Contact/Contact';
 import Courses from './componants/Courses/Courses';
 import Footer from './componants/Footer/Footer';
 import Header from './componants/Header/Header';
@@ -18,20 +19,25 @@ function App() {
         </Route>
         
         <Route path="/home"> 
-        <Home></Home>
+          <Home></Home>
         </Route>
-        
-        <Route path="/about"> 
-        <About></About>
+
+        <Route path="/courses"> 
+          <Courses></Courses>
         </Route>
 
         <Route path="/services"> 
-        <Services></Services>
+          <Services></Services>
         </Route>
         
-        <Route path="/courses"> 
-        <Courses></Courses>
+        <Route path="/about"> 
+          <About></About>
         </Route>
+        
+        <Route path="/contact"> 
+          <Contact></Contact>
+        </Route>
+        
         
         <Route exact path="*"> 
           <NotFound></NotFound>

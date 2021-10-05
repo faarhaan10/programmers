@@ -32,9 +32,9 @@ const Footer = () => {
                 <div className="col-lg-2 col-sm-6">
                     <div className=" text-white">
                         <h3>About</h3>
-                        <Nav.Link as={Link} to="/home"  className="py-0 text-secondary">Services</Nav.Link>
+                        <Nav.Link as={Link} to="/services"  className="py-0 text-secondary">Services</Nav.Link>
                         <Nav.Link as={Link} to="/about"  className="py-0 text-secondary">About Us</Nav.Link>
-                        <Nav.Link as={Link} to="/home"  className="py-0 text-secondary">Pricing</Nav.Link>
+                        <Nav.Link as={Link} to="/about"  className="py-0 text-secondary">Pricing</Nav.Link>
                         <Nav.Link as={Link} to="/home"  className="py-0 text-secondary">Contact Us</Nav.Link>
                 
                     </div>
