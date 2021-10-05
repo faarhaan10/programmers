@@ -7,9 +7,9 @@ const Home = () => {
     const [courses] = useCourses();
 
     return (
-        <div className="bg-info">
+        <div className="bg-info py-4">
             {/* carusel  */}
-            <Container className="py-2">
+            <Container className="py-2 mt-5">
                 <Carousel>
                 {
                     courses.map(course => <Carousel.Item    

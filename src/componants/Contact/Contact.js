@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return (
-        <Container>
-            <Row className="align-items-center">
+        <Container className="mt-5">
+            <Row className="align-items-center pt-2">
                 <Col xs={12} md={6}>
                     <div className="fw-bolder mx-5">
                         <h1>Get in Touch</h1>

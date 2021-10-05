@@ -7,8 +7,8 @@ const Courses = () => {
     const [courses] = useCourses();
 
     return (
-        <div className="bg-secondary">
-            <Container className="py-4">
+        <div className="bg-secondary py-4">
+            <Container className="py-4  mt-5">
                 <Row xs={1} md={3} className="g-4">
                 {
                     courses.map(course => <Course

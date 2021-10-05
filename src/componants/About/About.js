@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
     return (
-        <div>
+        <div className="mt-5 pt-5">
             <Container>
                 <Row className="align-items-center mt-5">
                     
