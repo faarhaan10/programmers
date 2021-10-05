@@ -2,6 +2,7 @@ import { BrowserRouter ,Switch ,Route} from 'react-router-dom';
 import './App.css';
 import About from './componants/About/About';
 import Contact from './componants/Contact/Contact';
+import CourseDetail from './componants/CourseDetail/CourseDetail';
 import Courses from './componants/Courses/Courses';
 import Footer from './componants/Footer/Footer';
 import Header from './componants/Header/Header';
@@ -20,6 +21,10 @@ function App() {
         
         <Route path="/home"> 
           <Home></Home>
+        </Route>
+        
+        <Route path="/course/:courseId"> 
+          <CourseDetail></CourseDetail>
         </Route>
 
         <Route path="/courses"> 
