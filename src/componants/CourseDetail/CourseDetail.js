@@ -1,6 +1,7 @@
 import React from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row ,Button } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
 
 // import { useState, useEffect} from "react";
 
@@ -29,6 +30,9 @@ const CourseDetail = () => {
                     <h1>Course id: {courseId}</h1>
                     <h2>Course detail is not available right now!</h2>
                     <h3>But! Don't Worry, It Will Be Right Back</h3>
+                    <Link to="/courses">
+                        <Button>Back</Button>
+                    </Link>
                 </Col>
                 <Col xs={12} md={6} className='text-center'>
                     <Image src="http://static.skaip.org/img/emoticons/180x180/f6fcff/loudlycrying.gif" />

@@ -1,14 +1,13 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import { Button, Card, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const Course = (props) => {
     const {id,courseName,catagory,institute,rating,totalStudent,type,imgUrl} = props.course;
     
     const history  = useHistory();
-    const handleCourse = courseId => {
-        history.push(`/course/${courseId}`);
+    const handleCourse = () => {
+        history.push(`/course/${id}`);
     }
     return (
         <Col>
@@ -26,7 +25,7 @@ const Course = (props) => {
 
                 </Card.Body>
                 <Card.Footer>
-                    <Button onClick={()=>{handleCourse({id})}>Enroll Now</Button>
+                    <Button onClick={handleCourse}>Enroll Now</Button>
 
                 </Card.Footer>
             </Card>
